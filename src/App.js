@@ -1,6 +1,6 @@
 import Header from "./comonents/Header";
 import Cards from "./comonents/Cards";
-
+import data from "../data";
 
 
 
