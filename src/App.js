@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./comonents/Header";
+import Cards from "./comonents/Cards";
+
+
+
+
+
+
 
 function App() {
+
+  const travelCards = data.map(item => {
+    return (
+      <Cards
+            key= {item.id}
+            {...item}
+      />
+    )
+  })
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="ravelJournal">
+      <Header/>
+      {travelCards}
     </div>
   );
 }
